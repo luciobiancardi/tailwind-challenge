@@ -1,23 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <title>DBP Learn - Tailwind Challenge</title>
-    <!-- Font awesome icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <!-- Tailwind core CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
 
-  <body>
-    <nav></nav>
-    <main></main>
-    <footer></footer>
-    <script src="./app.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <title>DBP Learn - Tailwind Challenge</title>
+  <!-- Font awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!-- Tailwind core CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <nav class="bg-black text-white ">
+    <div class="p-2 md:mx-24 font-bold md:flex md:items-center md:justify-between">
+      <div class="flex items-center justify-between">
+        DBP LEARN
+        <button class="block md:hidden" onclick="toggleNavbar('menu-list')">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <ul class="hidden md:flex md:items-center" id="menu-list">
+        <li class="p-1 text-sm mt-2 font-light md:my-0 md:font-medium md:text-sm">
+          <a href="#">ABOUT</a>
+        </li>
+        <li class="p-1 text-sm mt-2 font-light md:my-0 md:font-medium md:text-sm">
+          <a href="#">SERVICES</a>
+        </li>
+        <li class="p-1 text-sm mt-2 font-light md:my-0 md:font-medium md:text-sm">
+          <a href="#">CLIENTS</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <main></main>
+  <footer></footer>
+  <script src="./app.js"></script>
+</body>
+
 </html>

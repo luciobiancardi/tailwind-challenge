@@ -1,23 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <title>DBP Learn - Tailwind Challenge</title>
-    <!-- Font awesome icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <!-- Tailwind core CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
 
-  <body>
-    <nav></nav>
-    <main></main>
-    <footer></footer>
-    <script src="./app.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <title>DBP Learn - Tailwind Challenge</title>
+  <!-- Font awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!-- Tailwind core CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-200">
+  <nav class="bg-black text-white ">
+    <div class="p-2 md:mx-24 font-bold md:flex md:items-center md:justify-between">
+      <div class="flex items-center justify-between">
+        DBP LEARN
+        <button class="block md:hidden" onclick="toggleNavbar('menu-list')">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <ul class="hidden md:flex md:items-center" id="menu-list">
+        <li class="p-1 text-sm mt-2 font-light md:my-0 md:font-medium md:text-sm">
+          <a href="#">ABOUT</a>
+        </li>
+        <li class="p-1 text-sm mt-2 font-light md:my-0 md:font-medium md:text-sm">
+          <a href="#">SERVICES</a>
+        </li>
+        <li class="p-1 text-sm mt-2 font-light md:my-0 md:font-medium md:text-sm">
+          <a href="#">CLIENTS</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <section class="flex justify-center bg-gray-500 text-white">
+      <div class="p-4 my-10 sm:max-w-sm md:max-w-md	 lg:max-w-lg xl:max-w-xl text-center">
+        <h1 class="font-bold text-2xl ">Tailwind Challenge</h1>
+        <p class="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam iusto consectetur
+          impedit quisquam cupiditate
+          doloremque exercitationem rem vitae quia, nihil, itaque minima. Hic voluptates veniam ullam in molestiae iste
+          non? Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quas illo consectetur hic quisquam
+          natus magni unde eaque pariatur porro, aut minima est ipsum ducimus laborum eum. Veniam, iste molestiae?</p>
+        <div class="mt-4">
+          <button class="text-center px-2 py-1 text-white bg-blue-700 rounded-md mx-2">Tailwind docs</button>
+          <button class="text-center px-2 py-1 text-black bg-white rounded-md mx-2">Cheat sheet</button>
+        </div>
+      </div>
+    </section>
+    <section class="flex justify-center mx-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+        <div class="border-[1.5px] border-slate-300 rounded-md sm:max-w-sm md:max-w-md p-0 m-2 bg-white">
+          <img src="https://picsum.photos/420/225?v=1" class="rounded-t-md aspect-[5/3] w-full">
+          <p class="px-4 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quaerat
+            facilis
+            similique
+            pariatur modi
+            ducimus, quasi alias praesentium non magnam assumenda repellendus optio voluptas, quod accusantium mollitia
+            dignissimos recusandae fugit?</p>
+          <div class="flex justify-between px-4 my-2">
+            <span class="text-slate-400">5 mins</span>
+            <button class="rounded-md border border-black px-2">Read</button>
+          </div>
+        </div>
+
+        <div class="border-[1.5px] border-slate-300 rounded-md sm:max-w-sm md:max-w-md p-0 m-2 bg-white">
+          <img src="https://picsum.photos/420/225?v=2" class="rounded-t-md aspect-[5/3] w-full">
+          <p class="px-4 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quaerat
+            facilis
+            similique
+            pariatur modi
+            ducimus, quasi alias praesentium non magnam assumenda repellendus optio voluptas, quod accusantium mollitia
+            dignissimos recusandae fugit?</p>
+          <div class="flex justify-between px-4 my-2">
+            <span class="text-slate-400">5 mins</span>
+            <button class="rounded-md border border-black px-2">Read</button>
+          </div>
+        </div>
+
+        <div class="border-[1.5px] border-slate-300 rounded-md sm:max-w-sm md:max-w-md p-0 m-2 bg-white">
+          <img src="https://picsum.photos/420/225?v=3" class="rounded-t-md aspect-[5/3] w-full">
+          <p class="px-4 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quaerat
+            facilis
+            similique
+            pariatur modi
+            ducimus, quasi alias praesentium non magnam assumenda repellendus optio voluptas, quod accusantium
+            mollitia
+            dignissimos recusandae fugit?</p>
+          <div class="flex justify-between px-4 my-2">
+            <span class="text-slate-400">5 mins</span>
+            <button class="rounded-md border border-black px-2">Read</button>
+          </div>
+        </div>
+
+        <div class="border-[1.5px] border-slate-300 rounded-md sm:max-w-sm md:max-w-md p-0 m-2 bg-white">
+          <img src="https://picsum.photos/420/225?v=4" class="rounded-t-md aspect-[5/3] w-full">
+          <p class="px-4 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quaerat
+            facilis
+            similique
+            pariatur modi
+            ducimus, quasi alias praesentium non magnam assumenda repellendus optio voluptas, quod accusantium
+            mollitia
+            dignissimos recusandae fugit?</p>
+          <div class="flex justify-between px-4 my-2">
+            <span class="text-slate-400">5 mins</span>
+            <button class="rounded-md border border-black px-2">Read</button>
+          </div>
+        </div>
+
+        <div class="border-[1.5px] border-slate-300 rounded-md sm:max-w-sm md:max-w-md p-0 m-2 bg-white">
+          <img src="https://picsum.photos/420/225?v=5" class="rounded-t-md aspect-[5/3] w-full">
+          <p class="px-4 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quaerat
+            facilis
+            similique
+            pariatur modi
+            ducimus, quasi alias praesentium non magnam assumenda repellendus optio voluptas, quod accusantium
+            mollitia
+            dignissimos recusandae fugit?</p>
+          <div class="flex justify-between px-4 my-2">
+            <span class="text-slate-400">5 mins</span>
+            <button class="rounded-md border border-black px-2">Read</button>
+          </div>
+        </div>
+
+        <div class="border-[1.5px] border-slate-300 rounded-md sm:max-w-sm md:max-w-md p-0 m-2 bg-white">
+          <img src="https://picsum.photos/420/225?v=6" class="rounded-t-md aspect-[5/3] w-full">
+          <p class="px-4 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quaerat
+            facilis
+            similique
+            pariatur modi
+            ducimus, quasi alias praesentium non magnam assumenda repellendus optio voluptas, quod accusantium
+            mollitia
+            dignissimos recusandae fugit?</p>
+          <div class="flex justify-between px-4 my-2">
+            <span class="text-slate-400">5 mins</span>
+            <button class="rounded-md border border-black px-2">Read</button>
+          </div>
+        </div>
+
+        <div class="border-[1.5px] border-slate-300 rounded-md sm:max-w-sm md:max-w-md p-0 m-2 bg-white">
+          <img src="https://picsum.photos/420/225?v=7" class="rounded-t-md aspect-[5/3] w-full">
+          <p class="px-4 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quaerat
+            facilis
+            similique
+            pariatur modi
+            ducimus, quasi alias praesentium non magnam assumenda repellendus optio voluptas, quod accusantium
+            mollitia
+            dignissimos recusandae fugit?</p>
+          <div class="flex justify-between px-4 my-2">
+            <span class="text-slate-400">5 mins</span>
+            <button class="rounded-md border border-black px-2">Read</button>
+          </div>
+        </div>
+
+        <div class="border-[1.5px] border-slate-300 rounded-md sm:max-w-sm md:max-w-md p-0 m-2 bg-white">
+          <img src="https://picsum.photos/420/225?v=8" class="rounded-t-md aspect-[5/3] w-full">
+          <p class="px-4 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quaerat
+            facilis
+            similique
+            pariatur modi
+            ducimus, quasi alias praesentium non magnam assumenda repellendus optio voluptas, quod accusantium
+            mollitia
+            dignissimos recusandae fugit?</p>
+          <div class="flex justify-between px-4 my-2">
+            <span class="text-slate-400">5 mins</span>
+            <button class="rounded-md border border-black px-2">Read</button>
+          </div>
+        </div>
+    </section>
+  </main>
+  <footer class="bg-gray-900 text-gray-500 py-2 flex justify-around mt-4">
+    <p class="my-6">
+      &#174; 2022 Company, Inc.
+    </p>
+    <ul class="flex justify-between my-6 gap-x-4">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </ul>
+  </footer>
+  <script src="./app.js">
+  </script>
+</body>
+
 </html>
